@@ -23,14 +23,11 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: Poppins;
   color: #282828;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  scroll-behavior: smooth;
 }
 
 .colors {
@@ -42,9 +39,37 @@ a {
   color: #282828;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  width: max-content;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+section > h1 {
+  padding: 120px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 ul {
   list-style: none;
 }
+
+/* HEADER Y FOOTER */
 header {
   position: absolute;
   width: 100%;
@@ -86,8 +111,8 @@ header nav a:hover::after {
 footer nav a.active::after,
 header nav a.active::after {
   width: 100%;
+  animation: none;
 }
-
 header .logo {
   flex: 1;
   display: flex;
@@ -101,18 +126,55 @@ header .logo span {
   font-size: 2rem;
   text-transform: uppercase;
 }
-
 footer {
   background-color: #282828;
   color: #F7F7F9;
   display: flex;
   padding: 60px 60px;
 }
-
 footer nav {
   flex: 1;
 }
 
+/* HERO */
+.hero {
+  background-image: url('../assets/hero.jpg');
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 120px;
+  color: #F7F7F9;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 50%;
+  min-height: inherit;
+}
+.hero .content h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+.hero .content p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding-right: 2rem;
+}
+.hero a {
+  width: max-content;
+}
+.hero button:hover {
+  background-color: #F7F7F9;
+  border: 2px solid #F7F7F9;
+  color: #282828;
+}
+
+/* ANIMATIONS */
 @keyframes navigation-link {
   0% {
     width: 0%;
