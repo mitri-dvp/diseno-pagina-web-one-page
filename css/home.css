@@ -1,0 +1,99 @@
+button {
+  width: max-content;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+section {
+  padding: 120px;
+}
+section > h1 {
+  padding-bottom: 120px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.hero {
+  background-image: url('../assets/hero.jpg');
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 120px;
+  color: #F7F7F9;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 50%;
+  min-height: inherit;
+}
+.hero .content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+.hero .content h2 {
+  font-weight: lighter;
+}
+.hero button:hover {
+  background-color: #F7F7F9;
+  border: 2px solid #F7F7F9;
+  color: #282828;
+}
+
+.featured h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.featured .products-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+.featured .products-grid > div {
+}
+.featured .products-grid img {
+  width: 100%;
+}
+
+.categories button:hover {
+  background-color: #282828;
+  border: 2px solid #282828;
+  color: #F7F7F9;
+}
+
+.categories .categories-grid {
+  display: grid;
+  gap: 120px;
+}
+.categories .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: center;
+  min-height: 50vh;
+}
+.categories .card .content {
+  display: grid;
+  gap: 30px;
+}
+.categories .card:nth-child(even) .content {
+  order: 1;
+}
