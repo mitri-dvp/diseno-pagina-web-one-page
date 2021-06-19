@@ -8,23 +8,13 @@
   <link rel="icon" href="./assets/logo.svg">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<!-- 
-  TODO
-  - marquesina.
-  - menú responsivo.
-  - información de calidad.✅
-  - imágenes.✅
-  - encabezado con su respectiva imagen.✅
-  - titulo y logo.✅
-  - pie de pagina.✅
--->
 <body>
   <header>
     <a href="#" class="logo">
       <img src="./assets/logo.svg" alt="icono-xtra">
       <span>Xtra</span>
     </a>
-    <nav>
+    <nav class="desktop-nav">
       <a href="/">Inicio</a>
       <a href="/about.html">Sobre Nosotros</a>
       <a href="/products.html">Productos</a>
@@ -32,6 +22,19 @@
       <a href="/location.html">Ubícanos</a>
       <a class="active" href="#">Contáctanos</a>
     </nav>
+    <div class="mobile-nav-container">
+      <button class="burger">
+        =
+      </button>
+      <nav class="mobile-nav hidden">
+        <a href="/">Inicio</a>
+        <a href="/about.html">Sobre Nosotros</a>
+        <a href="/products.html">Productos</a>
+        <a href="/allies.html">Aliados</a>
+        <a href="/location.html">Ubícanos</a>
+        <a class="active" href="#">Contáctanos</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -73,8 +76,10 @@
       <a href="/location.html">Ubícanos</a>
       <a class="active" href="#">Contáctanos</a>
     </nav>
-    <p>2021 © Xtra. Todos los derechos reservados.</p>
+    <p>2021 © Xtra. <br> Todos los derechos reservados.</p>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

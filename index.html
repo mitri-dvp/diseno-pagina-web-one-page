@@ -24,7 +24,7 @@
       <img src="./assets/logo.svg" alt="icono-xtra">
       <span>Xtra</span>
     </a>
-    <nav>
+    <nav class="desktop-nav">
       <a class="active" href="#">Inicio</a>
       <a href="/about.html">Sobre Nosotros</a>
       <a href="/products.html">Productos</a>
@@ -32,6 +32,19 @@
       <a href="/location.html">Ubícanos</a>
       <a href="/contact.html">Contáctanos</a>
     </nav>
+    <div class="mobile-nav-container">
+      <button class="burger">
+        =
+      </button>
+      <nav class="mobile-nav hidden">
+        <a class="active" href="#">Inicio</a>
+        <a href="/about.html">Sobre Nosotros</a>
+        <a href="/products.html">Productos</a>
+        <a href="/allies.html">Aliados</a>
+        <a href="/location.html">Ubícanos</a>
+        <a href="/contact.html">Contáctanos</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -42,6 +55,7 @@
         <a href="#featured"><button>Ver más</button></a>
       </div>
     </section>
+
     <section class="products" id="featured">
       <h1>Productos de la Semana</h1>
       <div class="products-grid">
@@ -70,9 +84,8 @@
           <h2>Lampara Gris</h2>
         </div>
       </div>
-
-
     </section>
+
     <section class="categories">
       <h1>Caterorías</h1>
       <div class="categories-grid">
@@ -119,8 +132,10 @@
       <a href="/location.html">Ubícanos</a>
       <a href="/contact.html">Contáctanos</a>
     </nav>
-    <p>2021 © Xtra. Todos los derechos reservados.</p>
+    <p>2021 © Xtra. <br> Todos los derechos reservados.</p>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
