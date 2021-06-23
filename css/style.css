@@ -303,6 +303,68 @@ footer nav {
   gap: 120px;
 }
 
+/* MODAL */
+.modal-container {
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #F7F7F9;
+  position: relative;
+  width: 400px;
+}
+.modal marquee {
+  background-color: #282828;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #F7F7F9;
+  transform: translateY(100%);
+}
+
+.modal .header {
+  height: 100px;
+  background-color: #6B5F54;
+  color: #F7F7F9;
+}
+
+.modal .header .modal-exit {
+  background-color: #86C1C2;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.modal .header span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background-color: #86C1C2;
+  border-left: 8px solid #F7F7F9;
+  padding: 1rem;
+}
+
+
+
 /* MEDIA */
 @media (max-width: 1024px) {
   body {
