@@ -34,6 +34,7 @@ body {
   font-family: Poppins;
   color: #282828;
   scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 
 .colors {
@@ -67,13 +68,31 @@ button:hover {
   border: 1px solid #282828;
   color: #F7F7F9;
 }
-
-section > h1 {
+section.content > h1,
+section .intro > h1 {
+  font-size: 3rem;
   padding: 120px 0;
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
   letter-spacing: 1px;
+}
+section.content > h1 {font-size: 2rem;}
+section .intro > p {
+  letter-spacing: 1px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 120px;
+  gap: 120px;
+}
+
+.section img {
+  display: block;
 }
 
 ul {
@@ -82,7 +101,8 @@ ul {
 
 /* HEADER Y FOOTER */
 header {
-  position: absolute;
+  position: fixed;
+  background-color: #bababa;
   width: 100%;
   color: #F7F7F9;
   font-weight: 500;
