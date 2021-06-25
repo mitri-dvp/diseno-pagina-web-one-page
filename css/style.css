@@ -79,7 +79,9 @@ section .intro > h1 {
 }
 section.content > h1 {font-size: 2rem;}
 section.content > h1:first-child {padding-top: 0;}
-
+section .intro > h1 {
+  padding-top: 0;
+}
 section .intro > p {
   letter-spacing: 1px;
   max-width: 700px;
@@ -89,12 +91,15 @@ section .intro > p {
 .section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 120px;
-  gap: 120px;
+  max-width: 800px;
+  margin: 120px auto;
+  gap: 60px;
+  align-items: center;
 }
 
 .section img {
   display: block;
+  width: 100%;
 }
 
 ul {
@@ -264,12 +269,17 @@ footer nav {
 
 /* MAP */
 .map {
-  padding: 120px;
-  padding-top: 0;
+  padding: 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.map iframe {
+  width: 100%;
+  padding: 0 30px;
+  max-width: 600px;
+}
+
 
 /* FORM */
 .form-container {
@@ -323,6 +333,7 @@ footer nav {
   display: flex;
   justify-content: center;
   gap: 120px;
+  flex-wrap: wrap;
 }
 
 /* MODAL */
@@ -429,8 +440,61 @@ footer nav {
     top: 0;
     background-color: #bababa;
   }
+}
 
-  
+@media (max-width: 800px) {
+  .hero {
+    padding: 0 60px;
+  }
+  .hero .content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero .content p {
+    padding: 0;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    margin: 120px 30px;
+  }
+  .section img {
+    width: 340px;
+    display: none;
+    margin: auto;
+  }
+  section .intro {
+    max-width: 400px;
+    margin: auto;
+  }
+  section .intro p {
+    text-align: center;
+  }
+  section.content > h1,
+  section .intro > h1 {
+    font-size: 2rem;
+  }
+  .products .products-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: auto;
+  }
+  .products .products-grid h2 {
+    font-size: 1.5rem;
+  }
+  .products,
+  .form-container {
+    padding: 120px 30px;
+  }
+  .form-container form {
+    width: 100%;
+    max-width: 400px;
+
+  }
+
+
+
 }
 /* ANIMATIONS */
 @keyframes navigation-link {
