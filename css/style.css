@@ -78,6 +78,8 @@ section .intro > h1 {
   letter-spacing: 1px;
 }
 section.content > h1 {font-size: 2rem;}
+section.content > h1:first-child {padding-top: 0;}
+
 section .intro > p {
   letter-spacing: 1px;
   max-width: 700px;
