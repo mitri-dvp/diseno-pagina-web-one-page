@@ -385,8 +385,6 @@ footer nav {
   padding: 1rem;
 }
 
-
-
 /* MEDIA */
 @media (max-width: 1024px) {
   body {
@@ -418,9 +416,12 @@ footer nav {
     position: absolute;
     right: 0;
     top: 3rem;
-  }
-  header .mobile-nav-container nav.hidden {
     display: none;
+  }
+  
+  header .mobile-nav-container button:focus + nav,
+  header .mobile-nav-container nav:hover {
+    display: flex;
   }
 
   header {
